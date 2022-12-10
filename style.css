@@ -4,7 +4,7 @@
 }
 
 :root{
-    --primary-bg-color:#000;
+    --primary-bg-color:#ff0f00;
 }
 
 *{
@@ -18,17 +18,35 @@ img{
     height: 200px;
 }
 
+a{
+    color: #333;
+    text-decoration: none;
+}
+
 body{
     font-family: "Roboto";
     font-size: 20px;
-    background-color: var(--primary-bg-color);
-    color: #fff;
+    /* background-color: var(--primary-bg-color); */
+    /* color: #fff; */
 }
 
 .flex-one{
     display: flex;
+    justify-content: space-between;
+    background-color: var(--primary-bg-color);
+    padding: 30px;
 }
 
 .flex-one nav ul li{
     list-style: none;
+    padding-right: 20px;
 }
+
+.flex-one nav ul{
+    display: flex;
+}
+
+.flex-one h4{
+    font-size: 25px;
+}
+
