@@ -1,11 +1,25 @@
-const hoverLi = document.querySelector('.js');
-const hoverLi2 = document.querySelector('.htmlandcss');
-const hoverLi3 = document.querySelector('.react');
-const table = document.querySelector('.table');
+const button = document.querySelector('.btn-first');
+const button2 = document.querySelector('.btn-second');
 
-function tables(){
-    table.innerHTML = "<ul><li>SLIDER</li> <li>CALCULATOR</li></ul>";
-    table.classList.add('.tables');
-}
+button.addEventListener('mouseover', () =>{
+    button.style.backgroundColor = "transparent";
+    button.style.color = "#000";
+    button.style.cursor = "pointer";
+    button2.style.backgroundColor = "#000";
+    button2.style.color = "#fff";
+    button2.style.cursor = "pointer";
 
-hoverLi.addEventListener('click', (tables));
+    setTimeout(() =>{
+        button.style.backgroundColor = "#000";
+        button.style.color = "#fff";
+        button2.style.backgroundColor = "transparent";
+        button2.style.color = "#000";
+    },1000);
+});
+
+button2.addEventListener('mouseover', () =>{
+    button.style.backgroundColor = "transparent";
+    button.style.color = "#000";
+    button2.style.backgroundColor = "#000";
+    button2.style.color = "#fff";
+});

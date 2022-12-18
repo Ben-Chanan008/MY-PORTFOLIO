@@ -49,6 +49,11 @@ body{
    padding: 10px;
 }
 
+.btn:hover{
+    transform: scale(.98);
+    cursor: pointer;
+}
+
 .navs ul{
     display: flex;
     flex-direction: row;
@@ -66,3 +71,69 @@ body{
     transition: .5s ease-in-out;
     cursor: pointer;
 }
+
+/* section */
+.grid{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    margin: 100px;
+    font-size: 40px;
+    line-height: 4.5rem;
+}
+
+.section-one{
+    font-weight: bold;
+}
+
+.section-one ul li{
+    list-style-type: square;
+    padding: 0px;
+    margin-right:40px ;
+    font-size: medium;
+}
+
+.section-one ul >*:first-child{
+    list-style-type: none;
+}
+
+.section-one ul{
+    display: flex;
+}
+
+/*section buttons */
+.btn-primary{
+    padding: 011px;
+    border: 1px solid #000;
+    margin: 0;
+    width: 7vw;
+    background-color: #000;
+    color: #fff;
+}
+
+.btn-second{
+    background-color: transparent;
+    color: #000;
+}
+
+.div-btn{
+    display: flex;
+}
+
+/* section images */
+.img-section img{
+    height: 500px;
+    width: 500px;
+    border-radius: 50%;
+}
+
+.img-section{
+    display: inline-block;
+    z-index: -1;
+}
+
+/* .second-nav{
+    width: 100vw;
+    background-color: #000;
+    color: #fff;
+    transform: skew(-20deg);
+} */
