@@ -255,8 +255,41 @@ small{
     color: #fff!important;
 }
 
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+.button-contact{
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.button-contact button{
+    margin-top: 20px;
+    background-color: #000;
+    color: #fff;
+    font-family: "Roboto";
+    padding: 10px;
+    border: 1px solid #000;
+}
+
+.text-center{
+    text-align: center;
+    font-size: 50px;
+    padding: 10px;
+}
+
 /* media queries */
 @media(max-width: 500px){
+    body{
+        overflow-x: hidden;
+    }
+    
     #navbar{    
         display: grid;
         grid-template-columns: 1fr;
@@ -274,5 +307,46 @@ small{
         margin: 70px;
         margin-bottom: 10px;
         justify-self: center;
+    }
+
+    .grid{
+        display: grid;
+        grid-template-columns: 1fr;
+        margin:0;
+        text-align: center;
+    }
+
+    .second-nav{
+        width: 100vw;
+        justify-content: center;
+    }
+
+    .grid ul li{
+        margin-left: 20px;
+        justify-content: center;
+    }
+
+    .div-btn{
+        display: none;
+    }
+
+    .awards{
+        width: 100vw;
+        margin: 0;
+    }
+
+    .containers > div{
+        width: 100vw;
+        padding: 0;
+        margin: 0 10px;
+    }
+
+    .grid-two{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .second >*:nth-of-type(3){
+        margin-left: 10px;
     }
 }

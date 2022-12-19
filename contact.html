@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONTACT ME</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="button-contact">
+        <h1>CLICK ME!!!</h1>
+    <button>
+        MY NUMBER
+    </button>
+    </div>
+</body>
+<script>
+    const click = document.querySelector("button");
+    click.addEventListener('click', () =>{
+        click.innerHTML = "08077289562";
+        setTimeout(() =>{
+            click.innerHTML = click;
+        }, 3000)
+    });
+</script>
+</html>

@@ -1,5 +1,6 @@
 const button = document.querySelector('.btn-first');
 const button2 = document.querySelector('.btn-second');
+const click = document.querySelector("button");
 
 button.addEventListener('mouseover', () =>{
     button.style.backgroundColor = "transparent";
@@ -22,4 +23,11 @@ button2.addEventListener('mouseover', () =>{
     button.style.color = "#000";
     button2.style.backgroundColor = "#000";
     button2.style.color = "#fff";
+});
+
+click.addEventListener('click', () =>{
+    click.innerHTML = "08077289562";
+    setTimeout(() =>{
+        click.textContent = click.textContent;
+    }, 3000)
 });
