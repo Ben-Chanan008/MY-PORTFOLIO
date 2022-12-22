@@ -59,13 +59,13 @@ body{
 .navs ul{
     display: flex;
     flex-direction: row;
-    padding: 10px;
-    justify-content: center;
+    /* padding: 10px; */
 }
 
 .navs ul li{
     padding: 13px;
     list-style-type: none;
+    justify-content: center;
 }
 
 .navs ul li:hover{
@@ -352,6 +352,11 @@ footer div i{
     .second-nav{
         width: 100vw;
         justify-content: center;
+        align-items: center;
+    }
+
+    .second-nav ul li{
+        margin:  0 10px;
     }
 
     .grid ul li{
@@ -381,5 +386,13 @@ footer div i{
 
     .second >*:nth-of-type(3){
         margin-left: 10px;
+    }
+
+    .navs ul{
+        justify-content: center;
+    }
+
+    .section-one  ul li{
+        margin: 0 auto;
     }
 }
